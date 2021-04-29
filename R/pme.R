@@ -84,7 +84,7 @@ lodown_pme <-
 
 		tf <- tempfile()
 
-		cachaca( "ftp://ftp.ibge.gov.br/Trabalho_e_Rendimento/Pesquisa_Mensal_de_Emprego/Microdados/documentacao/Documentacao.zip" , tf )
+		cachaca( "https://github.com/luanmugarte/lodown/raw/master/Documentacao.zip" , tf )
 
 		unzipped_files <- unzip_warn_fail( tf , exdir = unique( np_dirname( catalog$output_filename ) )  )
 
